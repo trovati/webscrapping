@@ -23,6 +23,7 @@ exports.listings = (html) => {
         const url = titleElement.attr("href");
         const hood = getHood($, element);
         const datePosted = getDatePosted($, element);
+        
         return { title, url, hood, datePosted };
     }).get()
 }
